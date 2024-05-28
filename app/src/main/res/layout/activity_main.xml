@@ -24,87 +24,101 @@
         android:layout_height="60dp"
         android:src="@drawable/team_name"
         android:layout_marginTop="20dp"/>
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <View
-            android:layout_margin="50dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/team_intro_bg"/>
+            android:layout_margin="50dp"
+            android:background="@drawable/team_intro_bg" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="팀원소개"
-            android:textSize="30sp"
-            android:fontFamily="@font/pretendard"
-            android:textColor="@color/black"
             android:layout_marginTop="35dp"
             android:background="#c4da58"
+            android:fontFamily="@font/pretendard"
             android:paddingHorizontal="10dp"
-            />
+            android:text="팀원소개"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_gravity="center"
-            android:gravity="center_horizontal"
             android:layout_margin="50dp"
-            >
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/joo"
-                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_btn_bg"
+                android:fontFamily="@font/pretendard"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="60dp"
+                android:layout_marginVertical="10dp"
                 android:text="송주영"
-                android:textSize="30sp"
-                android:fontFamily="@font/pretendard"
-                android:textStyle="bold"
-                android:padding="10dp"/>
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/yoo"
-                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_btn_bg"
+                android:fontFamily="@font/pretendard"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="60dp"
+                android:layout_marginVertical="10dp"
                 android:text="송유호"
-                android:textSize="30sp"
-                android:fontFamily="@font/pretendard"
-                android:textStyle="bold"
-                android:padding="10dp"/>
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/jeong"
-                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_btn_bg"
+                android:fontFamily="@font/pretendard"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="60dp"
+                android:layout_marginVertical="10dp"
                 android:text="김정호"
-                android:textSize="30sp"
-                android:fontFamily="@font/pretendard"
-                android:textStyle="bold"
-                android:padding="10dp"/>
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/chan"
-                android:background="#00ff0000"
-                android:text="김찬휘"
-                android:textSize="30sp"
-                android:fontFamily="@font/pretendard"
-                android:textStyle="bold"
-                android:padding="10dp"/>
-            <Button
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/seong"
-                android:background="#00ff0000"
-                android:text="김성진"
-                android:textSize="30sp"
+                android:background="@drawable/main_btn_bg"
                 android:fontFamily="@font/pretendard"
-                android:textStyle="bold"
-                android:padding="10dp"/>
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="60dp"
+                android:layout_marginVertical="10dp"
+                android:text="김찬휘"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/seong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_btn_bg"
+                android:fontFamily="@font/pretendard"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="60dp"
+                android:layout_marginVertical="10dp"
+                android:text="김성진"
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
