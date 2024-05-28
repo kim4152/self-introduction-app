@@ -18,7 +18,7 @@ class yooho : AppCompatActivity() {
         supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_home)
 
 
-        toolbar.title="\"I\"송유호 소개페이지"
+        toolbar.title="송유호 소개페이지"
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
