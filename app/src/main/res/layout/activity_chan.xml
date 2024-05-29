@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:orientation="vertical"
     tools:context=".chan">
 
     <androidx.appcompat.widget.Toolbar
@@ -13,7 +15,149 @@
         android:background="#A9A9A9"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/profileimage" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+
+        android:paddingHorizontal="35dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/radius"
+            android:text="이름"
+
+            android:textColor="#A06428"
+            android:textSize="23dp">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+
+            ></Space>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.5"
+            android:background="@drawable/radius_1"
+            android:text="김찬휘"
+            android:textColor="#A06428"
+
+            android:textSize="23dp">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+
+        android:paddingHorizontal="35dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/radius"
+            android:text="나이"
+            android:textColor="#A06428"
+            android:textSize="23dp">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+
+            ></Space>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.5"
+            android:background="@drawable/radius_1"
+            android:text="26"
+            android:textColor="#A06428"
+
+            android:textSize="23dp">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+
+        android:paddingHorizontal="35dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/radius"
+            android:text="MBTI"
+            android:textColor="#A06428"
+            android:textSize="23dp">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+
+            ></Space>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.5"
+            android:background="@drawable/radius_1"
+            android:text="ISFP"
+            android:textColor="#A06428"
+            android:textSize="23dp">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+
+        android:paddingHorizontal="35dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/radius"
+            android:text=" 안녕하세요. \n 안드로이드 4기 김찬휘입니다.\n 잘부탁드립니다. "
+            android:textAlignment="textStart"
+            android:textColor="#A06428"
+            android:textSize="22sp"
+            android:lineSpacingExtra="8dp"
+            ></Button>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
