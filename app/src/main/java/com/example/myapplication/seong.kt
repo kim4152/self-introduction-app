@@ -16,8 +16,6 @@ class seong : AppCompatActivity() {
         supportActionBar?.setDisplayShowTitleEnabled(false)
         supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_home)
 
-
-        toolbar.title="김성진 소개페이지"
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

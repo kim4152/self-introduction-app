@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EBEBEB"
     tools:context=".seong">
 
     <androidx.appcompat.widget.Toolbar
@@ -11,6 +12,140 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#A9A9A9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_appbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="김성진 소개 페이지"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/seongToolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seongToolbar"/>
+
+    <TextView
+        android:id="@+id/tv_profile_text_name"
+        android:layout_width="738px"
+        android:layout_height="134px"
+        android:layout_marginTop="50px"
+        android:background="@drawable/yi"
+        android:gravity="center"
+        android:text="프로필"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seongToolbar" />
+
+    <LinearLayout
+        android:id="@+id/tv_profile_picture"
+        android:layout_width="497px"
+        android:layout_height="498px"
+        android:orientation="horizontal"
+        android:layout_marginTop="50px"
+        android:background="@drawable/xi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_profile_text_name">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="985px"
+        android:layout_height="92px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:text="이름 : 김성진"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_profile_picture"
+        android:layout_marginTop="60px"
+        android:background="#CACCD4">
+    </TextView>
+
+    <TextView
+        android:id="@+id/profile_name2"
+        android:layout_width="985px"
+        android:layout_height="92px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:text="MBTI : ISTJ"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/profile_name"
+        android:layout_marginTop="20px"
+        android:background="#CACCD4">
+    </TextView>
+
+    <TextView
+        android:id="@+id/profile_name3"
+        android:layout_width="985px"
+        android:layout_height="92px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:text="좌우명 : 노력은 배신하지 않는다."
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/profile_name2"
+        android:layout_marginTop="20px"
+        android:background="#CACCD4">
+    </TextView>
+
+    <TextView
+        android:id="@+id/profile_name4"
+        android:layout_width="985px"
+        android:layout_height="92px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:text="나이 : 만 22세"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/profile_name3"
+        android:layout_marginTop="20px"
+        android:background="#CACCD4">
+    </TextView>
+
+    <TextView
+        android:id="@+id/profile_name5"
+        android:layout_width="985px"
+        android:layout_height="92px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:text="취미 : 음악 듣기, 유튜브 보기"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/profile_name4"
+        android:layout_marginTop="20px"
+        android:background="#CACCD4">
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/profile_message"
+        android:layout_width="985px"
+        android:layout_height="286px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/profile_name5"
+        android:layout_marginTop="40px"
+        android:background="#FFFFFF">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/message_text"
+        android:layout_width="950px"
+        android:layout_height="wrap_content"
+        android:text="안드로이드 앱 개발 취업 및 개발자로서의 성장을 목표로 하는 4기 김성진입니다. 아직 부족한 게 많지만 열심히 한 번 해 보겠습니다."
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_message"
+        app:layout_constraintEnd_toEndOf="@+id/profile_message"
+        app:layout_constraintStart_toStartOf="@+id/profile_message"
+        app:layout_constraintTop_toTopOf="@+id/profile_message" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
