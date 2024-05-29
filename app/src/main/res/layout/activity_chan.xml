@@ -155,7 +155,7 @@
             android:textAlignment="textStart"
             android:textColor="#A06428"
             android:textSize="22sp"
-            android:lineSpacingExtra="8dp"
+            android:lineSpacingExtra="10dp"
             ></Button>
     </androidx.appcompat.widget.LinearLayoutCompat>
 
