@@ -11,7 +11,7 @@ class yooho : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_yooho)
 
-        val toolbar = findViewById<Toolbar>(R.id.mainToolbar)
+        val toolbar = findViewById<Toolbar>(R.id.yoohoToolbar)
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setDisplayShowTitleEnabled(false)
