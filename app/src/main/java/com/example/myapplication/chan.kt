@@ -18,6 +18,7 @@ class chan : AppCompatActivity() {
 
 
         toolbar.title="김찬휘 소개페이지"
+        //test
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
