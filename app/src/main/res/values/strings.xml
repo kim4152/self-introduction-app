@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="jeong_name">김정호</string>
+    <string name="jeong_age">23</string>
+    <string name="jeong_hobby">풋살, 등산, 복싱, 게임</string>
+    <string name="jeong_mbti">ISFJ</string>
+    <string name="jeong_motto">가치 있는 사람이 되자</string>
 </resources>

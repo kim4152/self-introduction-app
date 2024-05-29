@@ -2,9 +2,18 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".jeong">
+    tools:context=".MainActivity">
+
+    <!-- 배경 -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/jeong_background_image" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/jeongToolbar"
@@ -12,5 +21,110 @@
         android:layout_height="wrap_content"
         android:background="#A9A9A9"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- details key -->
+    <TextView
+        android:id="@+id/age_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="나이"
+        style="@style/jeong_style"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/mbti_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MBTI"
+        style="@style/jeong_style"
+        app:layout_constraintTop_toBottomOf="@id/age_key"
+        app:layout_constraintStart_toStartOf="@id/age_key"/>
+
+    <TextView
+        android:id="@+id/hobby_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="취미"
+        style="@style/jeong_style"
+        app:layout_constraintStart_toStartOf="@id/age_key"
+        app:layout_constraintTop_toBottomOf="@id/mbti_key"/>
+
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/detail_divider"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:dividerColor="#602121"
+        android:layout_marginHorizontal="5dp"
+        app:layout_constraintTop_toTopOf="@id/age_value"
+        app:layout_constraintBottom_toBottomOf="@id/hobby_textView"
+        app:layout_constraintStart_toEndOf="@id/mbti_key"/>
+
+    <!-- details value -->
+    <TextView
+        android:id="@+id/age_value"
+        android:text="@string/jeong_age"
+        style="@style/jeong_style"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toEndOf="@id/detail_divider"
+        app:layout_constraintTop_toTopOf="@id/age_key" />
+
+    <TextView
+        android:id="@+id/mbti_value"
+        android:text="@string/jeong_mbti"
+        style="@style/jeong_style"
+        app:layout_constraintStart_toStartOf="@id/age_value"
+        app:layout_constraintTop_toBottomOf="@id/age_value"/>
+    <TextView
+        android:id="@+id/hobby_textView"
+        android:text="@string/jeong_hobby"
+        style="@style/jeong_style"
+        app:layout_constraintStart_toStartOf="@id/age_value"
+        app:layout_constraintTop_toBottomOf="@id/mbti_value"/>
+
+
+    <!-- 프로필 이미지 -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/jeong_profile_image"
+        app:civ_border_color="@color/black"
+        app:civ_border_overlay="true"
+        app:civ_border_width="0dp"
+        app:layout_constraintBottom_toTopOf="@id/nameTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!--civ_border_overlay : 테두리를 이미지와 겹치게 그릴지-->
+
+    <!-- 이름 -->
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text="@string/jeong_name"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:fontFamily="@font/pretendard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- 좌우명 -->
+    <TextView
+        android:id="@+id/mottoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jeong_motto"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:fontFamily="@font/pretendard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameTextView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
