@@ -16,6 +16,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="497px"
+        android:layout_height="498px"
+        android:src="@drawable/profile_image_sungjin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60px"
+        app:layout_constraintTop_toBottomOf="@+id/tv_profile_text_name" />
+
     <TextView
         android:id="@+id/tv_appbar_title"
         android:layout_width="wrap_content"
@@ -42,18 +52,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/seongToolbar" />
 
-    <LinearLayout
-        android:id="@+id/tv_profile_picture"
-        android:layout_width="497px"
-        android:layout_height="498px"
-        android:orientation="horizontal"
-        android:layout_marginTop="50px"
-        android:background="@drawable/xi"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_profile_text_name">
-    </LinearLayout>
-
     <TextView
         android:id="@+id/profile_name"
         android:layout_width="985px"
@@ -63,7 +61,7 @@
         android:gravity="center"
         android:text="이름 : 김성진"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/tv_profile_picture"
+        app:layout_constraintTop_toBottomOf="@id/profile_image"
         android:layout_marginTop="60px"
         android:background="#CACCD4">
     </TextView>
