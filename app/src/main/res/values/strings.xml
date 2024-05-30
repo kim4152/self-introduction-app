@@ -9,11 +9,15 @@
 
     <!-- 송주영 문자열 리소스 -->
     <string name="joo_name">송주영 (팀장)</string>
+    <string name="joo_info1">AGE</string>
+    <string name="joo_age">18세</string>
+    <string name="joo_info2">MBTI</string>
+    <string name="joo_mbti">INTJ</string>
+    <string name="joo_info3">LIKE</string>
+    <string name="joo_like">햄스터, 초밥</string>
     <string name="joo_introduce">
         가독성 있고 이해하기 쉬운 코드를 작성하고자 하는\n개발자 송주영입니다. 간단한 로직을 구현하더라도 그\n동작과정과 원리를 제데로 이해하는 것이 중요하다고\n생각합니다. 꾸준한 노력을 통해 유의미한 성장을 해나\n가고 싶습니다. 앱개발자로써 취직을 하여 개발자 커리\n어를 쌓아나가는 것이 지금 제 목표입니다.
     </string>
-
-
 </resources>
 
 

@@ -43,12 +43,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:background="#E7D5B4"
-
         android:padding="2dp"
-        android:paddingBottom="10dp"
         android:stretchColumns="*"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2">
 
@@ -63,7 +60,7 @@
                 android:layout_height="44dp"
                 android:background="#FCF8F2"
                 android:gravity="center"
-                android:text="AGE"
+                android:text="@string/joo_info1"
                 android:textColor="#7B5D44"
                 android:textSize="20sp" />
 
@@ -71,10 +68,9 @@
                 android:layout_width="217dp"
                 android:layout_height="44dp"
                 android:layout_marginLeft="2dp"
-
                 android:background="#FCF8F2"
                 android:gravity="center"
-                android:text="18세"
+                android:text="@string/joo_age"
                 android:textColor="#7B5D44"
                 android:textSize="20sp" />
         </TableRow>
@@ -89,19 +85,17 @@
                 android:layout_height="44dp"
                 android:background="#FCF8F2"
                 android:gravity="center"
-                android:text="MBTI"
+                android:text="@string/joo_info2"
                 android:textColor="#7B5D44"
                 android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="44dp"
-
-
                 android:layout_marginLeft="2dp"
                 android:background="#FCF8F2"
                 android:gravity="center"
-                android:text="INTJ"
+                android:text="@string/joo_mbti"
                 android:textColor="#7B5D44"
                 android:textSize="20sp" />
         </TableRow>
@@ -109,28 +103,24 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-
             android:background="#E7D5B4">
 
             <TextView
                 android:layout_height="44dp"
                 android:background="#FCF8F2"
                 android:gravity="center"
-                android:text="LIKE"
+                android:text="@string/joo_info3"
                 android:textColor="#7B5D44"
                 android:textSize="20sp" />
 
             <TextView
                 android:layout_height="44dp"
                 android:layout_marginLeft="2dp"
-
-
                 android:background="#FCF8F2"
                 android:gravity="center"
-                android:text="INTJ"
+                android:text="@string/joo_like"
                 android:textColor="#7B5D44"
                 android:textSize="20sp" />
-
         </TableRow>
     </TableLayout>
 
@@ -163,3 +153,5 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
