@@ -36,29 +36,116 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/joo_profile_svg" />
 
-    <ImageView
-        android:id="@+id/imageView5"
+
+    <TableLayout
+        android:id="@+id/joo_table"
         android:layout_width="300dp"
-        android:layout_height="140dp"
-        android:layout_marginTop="24dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#E7D5B4"
+
+        android:padding="2dp"
+        android:paddingBottom="10dp"
+        android:stretchColumns="*"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:srcCompat="@drawable/joo_table"
-        android:contentDescription="개인정보 테이블"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:background="#E7D5B4">
+
+            <TextView
+                android:layout_width="77dp"
+                android:layout_height="44dp"
+                android:background="#FCF8F2"
+                android:gravity="center"
+                android:text="AGE"
+                android:textColor="#7B5D44"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="217dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="2dp"
+
+                android:background="#FCF8F2"
+                android:gravity="center"
+                android:text="18세"
+                android:textColor="#7B5D44"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:background="#E7D5B4">
+
+            <TextView
+                android:layout_height="44dp"
+                android:background="#FCF8F2"
+                android:gravity="center"
+                android:text="MBTI"
+                android:textColor="#7B5D44"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+
+
+                android:layout_marginLeft="2dp"
+                android:background="#FCF8F2"
+                android:gravity="center"
+                android:text="INTJ"
+                android:textColor="#7B5D44"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="#E7D5B4">
+
+            <TextView
+                android:layout_height="44dp"
+                android:background="#FCF8F2"
+                android:gravity="center"
+                android:text="LIKE"
+                android:textColor="#7B5D44"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_height="44dp"
+                android:layout_marginLeft="2dp"
+
+
+                android:background="#FCF8F2"
+                android:gravity="center"
+                android:text="INTJ"
+                android:textColor="#7B5D44"
+                android:textSize="20sp" />
+
+        </TableRow>
+    </TableLayout>
 
     <LinearLayout
         android:layout_width="300dp"
         android:layout_height="150dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/joo_introduce_box"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5">
+        app:layout_constraintTop_toBottomOf="@+id/joo_table">
+
 
         <TextView
             android:id="@+id/joo_explain"
