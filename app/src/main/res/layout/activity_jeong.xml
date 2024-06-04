@@ -25,66 +25,67 @@
     <!-- details key -->
     <TextView
         android:id="@+id/age_key"
+        style="@style/jeong_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="나이"
-        style="@style/jeong_style"
-        android:layout_marginTop="250dp"
         android:layout_marginLeft="40dp"
+        android:layout_marginTop="250dp"
+        android:text="나이"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/mbti_key"
+        style="@style/jeong_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="MBTI"
-        style="@style/jeong_style"
-        app:layout_constraintTop_toBottomOf="@id/age_key"
-        app:layout_constraintStart_toStartOf="@id/age_key"/>
+        app:layout_constraintStart_toStartOf="@id/age_key"
+        app:layout_constraintTop_toBottomOf="@id/age_key" />
 
     <TextView
         android:id="@+id/hobby_key"
+        style="@style/jeong_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="취미"
-        style="@style/jeong_style"
         app:layout_constraintStart_toStartOf="@id/age_key"
-        app:layout_constraintTop_toBottomOf="@id/mbti_key"/>
+        app:layout_constraintTop_toBottomOf="@id/mbti_key" />
 
 
     <com.google.android.material.divider.MaterialDivider
         android:id="@+id/detail_divider"
         android:layout_width="1dp"
         android:layout_height="0dp"
+        android:layout_marginHorizontal="5dp"
         android:orientation="vertical"
         app:dividerColor="#602121"
-        android:layout_marginHorizontal="5dp"
-        app:layout_constraintTop_toTopOf="@id/age_value"
         app:layout_constraintBottom_toBottomOf="@id/hobby_textView"
-        app:layout_constraintStart_toEndOf="@id/mbti_key"/>
+        app:layout_constraintStart_toEndOf="@id/mbti_key"
+        app:layout_constraintTop_toTopOf="@id/age_value" />
 
     <!-- details value -->
     <TextView
         android:id="@+id/age_value"
-        android:text="@string/jeong_age"
         style="@style/jeong_style"
         android:layout_marginLeft="10dp"
+        android:text="@string/jeong_age"
         app:layout_constraintStart_toEndOf="@id/detail_divider"
         app:layout_constraintTop_toTopOf="@id/age_key" />
 
     <TextView
         android:id="@+id/mbti_value"
-        android:text="@string/jeong_mbti"
         style="@style/jeong_style"
+        android:text="@string/jeong_mbti"
         app:layout_constraintStart_toStartOf="@id/age_value"
-        app:layout_constraintTop_toBottomOf="@id/age_value"/>
+        app:layout_constraintTop_toBottomOf="@id/age_value" />
+
     <TextView
         android:id="@+id/hobby_textView"
-        android:text="@string/jeong_hobby"
         style="@style/jeong_style"
+        android:text="@string/jeong_hobby"
         app:layout_constraintStart_toStartOf="@id/age_value"
-        app:layout_constraintTop_toBottomOf="@id/mbti_value"/>
+        app:layout_constraintTop_toBottomOf="@id/mbti_value" />
 
 
     <!-- 프로필 이미지 -->
@@ -106,10 +107,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
+        android:fontFamily="@font/pretendard"
         android:text="@string/jeong_name"
         android:textColor="@color/white"
         android:textSize="25dp"
-        android:fontFamily="@font/pretendard"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -119,10 +120,10 @@
         android:id="@+id/mottoTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendard"
         android:text="@string/jeong_motto"
         android:textColor="@color/white"
         android:textSize="18dp"
-        android:fontFamily="@font/pretendard"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/nameTextView" />
