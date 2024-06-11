@@ -15,4 +15,10 @@ class Solution {
 
     return b
 }
+
+fun main() {
+    println(solution(4))  // 출력: 5
+    println(solution(5))  // 출력: 8
+}
+
 }
